@@ -147,9 +147,9 @@ Donde:
 
 
 
-<!-- WhatsHelp.io widget -->
+	<!-- WhatsHelp.io widget -->
 <script type="text/javascript">
-    (function () {
+    (function (uno) {
         var options1 = {
             facebook: "240596130112855", // Facebook page ID
             call_to_action: "Contactenos", // Call to action
@@ -157,7 +157,7 @@ Donde:
         };
         var proto1 = document.location.protocol, host = "whatshelp.io", url = proto1 + "//static." + host;
         var s1 = document.createElement('script'); s1.type = 'text/javascript'; s1.async = true; s1.src = url + '/widget-send-button/js/init.js';
-        s1.onload = function () { WhWidgetSendButton.init(host, proto1, options1); };
+        s1.onload = function (uno) { WhWidgetSendButton.init(host, proto1, options1); };
         var x1 = document.getElementsByTagName('script')[0]; x1.parentNode.insertBefore(s1, x1);
     })();
 </script>
@@ -167,7 +167,7 @@ Donde:
 
 <!-- WhatsHelp.io widget -->
 <script type="text/javascript">
-    (function () {
+    (function (dos) {
         var options = {
             whatsapp: "+59179783280", // WhatsApp number
             call_to_action: "Contactenos", // Call to action
@@ -175,11 +175,15 @@ Donde:
         };
         var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
         var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        s.onload = function (dos) { WhWidgetSendButton.init(host, proto, options); };
         var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
     })();
 </script>
 <!-- /WhatsHelp.io widget -->
+	
+	
+	
+	
 	
 </section>
 
